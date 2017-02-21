@@ -1,8 +1,11 @@
-<div>
-  <p>{{player1}} is X</p><p>{{player2}} is O</p>
+<span class="player-name">{{player1}} is X</span>
+<span class="player-name">{{player2}} is O</span>
+
+<div class="container" id="board">
+  <div ng-repeat="row in board track by $index">
+    <div class="square" ng-repeat="cell in row track by $index" ng-click="makeChoice($parent.$index, $index)">
+    <span>{{board == '' ? '' : cell}}</span>
+    </div>
+  </div>
 </div>
-
-
-
-
-
+<p class="player-name">It is {{turnNumber === 0 ? player1 : player2 }}'s turn</p>

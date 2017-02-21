@@ -1,0 +1,29 @@
+.header {
+  font-size: 36px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: solid 2px black;
+  display: inline-block;
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: grey;
+  margin: 5px;
+  text-align: center;
+}
+
+.player-name {
+  font-size: 24px;
+}
+
+#board {
+  width: 450px;
+  height: 100%;
+}
+
+.page {
+  width: 500px;
+  margin: 0 auto;
+}

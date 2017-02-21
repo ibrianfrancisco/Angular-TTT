@@ -19,12 +19,10 @@ $stateProvider
   templateUrl: 'templates/board.html'
 })
 
-
-
-
-
-
-
+.state('gameover', {
+  url: '/gameover',
+  templateUrl: 'templates/gameover.html'
+});
 
 }])
 
